@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "recipe_id": "rcp_demo_knee_r",
+  "exercise_name": "Demo — Ekstensi lutut kanan",
+  "capture": {
+    "camera_view": "sagittal_right",
+    "view_instruction": "Posisikan kamera di samping kanan tubuh.",
+    "fps": 30,
+    "phone_orientation": "portrait"
+  },
+  "joints": {
+    "primary": ["knee_flex_R"],
+    "guard": ["hip_flex_R", "trunk_incline", "pelvis_shift"]
+  },
+  "template": {
+    "length": 20,
+    "knee_flex_R": [8, 10, 15, 23, 35, 48, 60, 69, 74, 76, 76, 74, 69, 60, 48, 35, 23, 15, 10, 8],
+    "hip_flex_R": [88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88, 88],
+    "trunk_incline": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+    "pelvis_shift": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+  "tolerance": {
+    "knee_flex_R": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+    "hip_flex_R": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+    "trunk_incline": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+    "pelvis_shift": [0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08, 0.08]
+  },
+  "rom": {
+    "knee_flex_R": {"min": 8, "max": 76, "range": 68},
+    "hip_flex_R": {"min": 88, "max": 88, "range": 0},
+    "trunk_incline": {"min": 3, "max": 3, "range": 0},
+    "pelvis_shift": {"min": 0, "max": 0, "range": 0}
+  },
+  "timing": {"cycle_sec": 3.2, "concentric_pct": 50, "hold_pct": 5, "eccentric_pct": 45},
+  "prescription": {"target_reps": 12, "target_sets": 3, "rest_sec": 45, "progression_factor": 1.0},
+  "guidance": {
+    "start": "Your position is correct. Start the exercise slowly.",
+    "rep_complete": "Good, repetition complete.",
+    "hold": "Good, hold this position and keep your body stable.",
+    "descending": "Return to the starting position slowly.",
+    "guard_trunk": "Keep your torso upright and do not lean.",
+    "guard_pelvis": "Keep your pelvis stable."
+  },
+  "quality": {"validation_status": "approved", "therapist_reviewed": true}
+}

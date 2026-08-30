@@ -1,0 +1,10 @@
+.dart_tool
+.git
+.idea
+android
+ios
+linux
+macos
+windows
+test
+*.md
